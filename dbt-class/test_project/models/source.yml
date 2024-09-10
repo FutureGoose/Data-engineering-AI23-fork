@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: weather_data
+    tables:
+      - name: raw_weatherapp
+        description: Source data for weather in stockholm with interval of 1h.
+        columns:
+          - name: modified_timestamp
+            description: Timestamp on when the data was modified at source
+          - name: ingestion_timestamp
+            description: Timestamp on when the data was ingestion from source
+          - name: data
+            description: data payload from source in the format of JSON.

@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: _stg_weather_stockholm
+    columns:
+      - name: modified_timestamp
+        data_tests:
+          - not_null
+      - name: temp_timestamp
+        data_tests:
+          - not_null
+      - name: temp_c
+        data_tests:
+          - not_null
+        
